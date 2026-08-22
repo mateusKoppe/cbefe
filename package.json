@@ -1,0 +1,22 @@
+{
+  "name": "copa-ps2-cover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --port 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.11.13"
+  },
+  "devDependencies": {
+    "ejs": "^6.0.1",
+    "minimist": "^1.2.8",
+    "vite": "^8.1.2",
+    "vite-plugin-ejs": "^2.0.0"
+  }
+}

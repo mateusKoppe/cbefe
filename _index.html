@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  <style>
+    body {
+      background-image: url(./assets/wallpaper-vertical.jpg);
+      background-size: cover;
+      font-size: 10px;
+      padding: 20px 8px;
+      margin: 0;
+    }
+
+    h1, h2 {
+      color: #dee2f2;
+      text-align: center;
+      text-shadow: -1px -1px 0 #1621cf, 1px -1px 0 #1621cf, -1px 1px 0 #1621cf, 1px 1px 0 #1621cf;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .games-showcase {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      place-items: center;
+      gap: 20px;
+
+      figure {
+        margin: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      figure.blocked {
+        position: relative;
+
+        .title {
+          opacity: 0.8;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50%;
+        margin-top: -50%;
+      }
+    }
+
+  </style>
+  </head>
+  <body>
+    <h1> Copa PS2 dos Guris!! </h1>
+    <h2> Edição deu a louca no console! </h1>
+
+    <div class="games-showcase">
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Ace Combat Zero - The Belkan War (USA).png">
+        </figure>
+      
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Dragon Ball Z - Budokai Tenkaichi 3 (USA) (En,Ja).png">
+        </figure>
+      
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/FIFA Street 2 (USA) (En,Es).png">
+        </figure>
+      
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Need for Speed - Underground 2 (USA).png">
+        </figure>
+      
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Red Dead Revolver (USA).png">
+        </figure>
+      
+      
+      
+        <figure>
+          <img src="https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Tony Hawk&#39;s Downhill Jam (USA).png">
+        </figure>
+      
+      
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>

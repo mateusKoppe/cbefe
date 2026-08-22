@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  <style>
+    body {
+      background-image: url(./assets/wallpaper-vertical.jpg);
+      background-size: cover;
+      font-size: 10px;
+      padding: 20px 8px;
+      margin: 0;
+    }
+
+    h1, h2 {
+      color: #dee2f2;
+      text-align: center;
+      text-shadow: -1px -1px 0 #1621cf, 1px -1px 0 #1621cf, -1px 1px 0 #1621cf, 1px 1px 0 #1621cf;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .games-showcase {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      place-items: center;
+      gap: 20px;
+
+      figure {
+        margin: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      figure.blocked {
+        position: relative;
+
+        .title {
+          opacity: 0.8;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50%;
+        margin-top: -50%;
+      }
+    }
+
+  </style>
+  </head>
+  <body>
+    <h1> <%= title %> </h1>
+    <h2> <%= subtitle %> </h1>
+
+    <div class="games-showcase">
+      <% games.sort().forEach(function(game){ %>
+      <% if (!blocks.includes(game)) { %>
+        <figure>
+          <img src="<%= `${thumbnails_from}/${game}` %>">
+        </figure>
+      <% } else { %>
+        <figure class="blocked">
+          <img class="title" src="<%= `${thumbnails_from}/${game}` %>">
+          <img class="block" src="./assets/banned.webp">
+        </figure>
+      <% } %>
+      <% }) %>
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
